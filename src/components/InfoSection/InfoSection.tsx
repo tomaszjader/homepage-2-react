@@ -1,11 +1,10 @@
 import React from 'react';
 import './InfoSection.css';
+import Image from 'next/image';
 
-interface InfoSectionProps {
-  // props here
-}
+type Props = Record<string, never>;
 
-export const InfoSection: React.FC<InfoSectionProps> = () => {
+export const InfoSection: React.FC<Props> = () => {
   return (
     <section id="about">
       <div className="about">
@@ -18,18 +17,18 @@ export const InfoSection: React.FC<InfoSectionProps> = () => {
             you have one - <a href="#contact" className="about-pargrph-custom about-link">contact me</a> 😊</p>
           <div className="buttons">
             <a href="#contact" className="about-button-contact about-link link-font">
-              <img src="assets/img/cloud.svg" alt="" height="24" />
+              <Image src={`/assets/img/cloud.svg`} alt="" height={24} width={24}/>
               Get in touch
             </a>
             <a className="about-button-know about-link link-font" href="#skills" >
-              <img src="assets/img/image-user.svg" alt="" height="24" />
+              <Image src={`/assets/img/image-user.svg`} alt="" height={24} width={24}/>
               Get to know me
             </a>
           </div>
 
         </div>
 
-        <img src="assets/img/47568523.jpg" alt="" className="about-img" height="400" />
+        <Image src={`/assets/img/47568523.jpg`} alt="" className="about-img" height={400} width={400} />
       </div>
     </section>
   );
