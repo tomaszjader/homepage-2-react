@@ -14,11 +14,26 @@ export const ProjectsSection: React.FC = () => {
   React.useEffect(() => {
     const fetchProjects = async () => {
       const projects = await getGithubProjects();
-      setData(projects);
+      const filteredProjects = projects.filter( 
+        (repo: Project) => repo.description && repo.homepage
+      );
+      setData(filteredProjects);
     };
     
     fetchProjects();
   }, []);
+
+  const renderGithubCard = (project: Project) => (
+    <GithubCard
+      key={project.name}
+      description={project.description}
+      project={project.name}
+      link={project.html_url}
+      website={project.homepage}
+      topics={project.topics ?? []}
+      stargazersCount={project.stargazers_count}
+    />
+  );
 
   if (!data.length) {
     return <div>Ładowanie projektów...</div>;
@@ -36,43 +51,13 @@ export const ProjectsSection: React.FC = () => {
         </div>
         <div className="projects__githubCards">
           <div className="projects__githubCards-concret">
-            {data.slice(0, 2).map((project) => (
-              <GithubCard
-                key={project.name}
-                description={project.description}
-                project={project.name}
-                link={project.html_url}
-                website={project.homepage}
-                topics={project.topics}
-                stargazersCount={project.stargazers_count}
-              />
-            ))}
+            {data.slice(0, 2).map(renderGithubCard)}
           </div>
           <div className="projects__githubCards-concret">
-            {data.slice(2, 4).map((project) => (
-              <GithubCard
-                key={project.name}
-                description={project.description}
-                project={project.name}
-                link={project.html_url}
-                website={project.homepage}
-                topics={project.topics}
-                stargazersCount={project.stargazers_count}
-              />
-            ))}
+            {data.slice(2, 4).map(renderGithubCard)}
           </div>
           <div className="projects__githubCards-concret">
-            {data.slice(4, 6).map((project) => (
-              <GithubCard
-                key={project.name}
-                description={project.description}
-                project={project.name}
-                link={project.html_url}
-                website={project.homepage}
-                topics={project.topics}
-                stargazersCount={project.stargazers_count}
-              />
-            ))}
+            {data.slice(4, 6).map(renderGithubCard)}
           </div>
         </div>
       </article>
