@@ -2,6 +2,7 @@ import React from 'react';
 import { SkillsItem } from '@/src/components/SkillsItem/SkillsItem';
 import './SkillsSection.css';
 
+
 export const SkillsSection: React.FC = () => {
   return (
     

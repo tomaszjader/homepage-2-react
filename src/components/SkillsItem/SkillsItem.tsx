@@ -1,6 +1,7 @@
 import React from 'react';
 import './SkillsItem.css';
 import Image from 'next/image';
+import { getImagePath } from '@/src/utils/utils';
 
 interface SkillsItemProps {
   skillsArray: string[];
@@ -14,7 +15,7 @@ export const SkillsItem: React.FC<SkillsItemProps> = ({ skillsArray, skillsHeade
       <section className="skills-item">
         <Image 
           className="skills-item__specific-image"
-          src={skillsImage}
+          src={getImagePath(skillsImage)}
           alt="skills icon"
           width={180}
           height={180}
@@ -23,7 +24,7 @@ export const SkillsItem: React.FC<SkillsItemProps> = ({ skillsArray, skillsHeade
           <div className="line-container">
             <Image 
               className="line" 
-              src={'assets/img/myslnik.svg'} 
+              src={getImagePath('assets/img/myslnik.svg')} 
               alt="" 
               width={2000}
               height={1}

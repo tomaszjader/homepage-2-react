@@ -1,13 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import './NavBarSection.css';
+import { getImagePath } from '@/src/utils/utils';
 
 export const NavBarSection = () => {
   return (
     <nav className="hero hero-gap">
     <div className="nav-bar">
         <div className="hero hero-section">
-            <Image src={`assets/img/navbar-logo.svg`} alt="" height={42} width={42}/>
+            <Image src={getImagePath('assets/img/navbar-logo.svg')} alt="" height={42} width={42}/>
             <div className="my">
                 <p className="my-name">Tomasz Jąder</p>
                 <p className="my-title">Junior Fullstack developer</p>
@@ -21,7 +22,7 @@ export const NavBarSection = () => {
             <a href="#projects" className="nav-item">Projects</a>
     
             <div className="nav-item-resume">
-                <Image src={`assets/img/download-button.svg`} alt="" height={20} width={20}/>
+                <Image src={getImagePath('assets/img/download-button.svg')} alt="" height={20} width={20}/>
     
                 <a href="assets/files/TomaszJąderCV.pdf"  download="TomaszJąderCV.pdf" className="nav-item">Resume</a>
     

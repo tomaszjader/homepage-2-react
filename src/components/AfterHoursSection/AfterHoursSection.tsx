@@ -1,12 +1,8 @@
 import React from 'react';
 import './AfterHoursSection.css';
 import Image from 'next/image';
+import { getImagePath } from '@/src/utils/utils';
 
-const getImagePath = (path: string) => {
-  return process.env.NODE_ENV === 'development' 
-    ? `/${path}`
-    : path;
-};
 
 interface AfterHoursSectionProps {
   children?: React.ReactNode;
