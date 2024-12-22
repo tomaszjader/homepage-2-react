@@ -1,5 +1,7 @@
 import React from 'react';
 import './GithubCard.css';
+import { getImagePath } from '@/src/utils/utils';
+import Image from 'next/image';
 
 interface GithubCardProps {
   project: string;
@@ -24,7 +26,7 @@ export const GithubCard: React.FC<GithubCardProps> = ({ project, stargazersCount
                 {project}
             </h3>
             <span className="github-card-star">
-                <img src="assets/img/star.svg" alt="" height="16px"/>
+                <Image src={getImagePath('assets/img/star.svg')} alt="" width={16} height={16}/>
                 {stargazersCount}
             </span>
         </div>
@@ -39,10 +41,10 @@ export const GithubCard: React.FC<GithubCardProps> = ({ project, stargazersCount
         </div>
         <div className="github-card-buttons">
             <a className="github-card-view-button" href={website} target="_blank" style={{textDecoration: 'none'}}>
-                <img src="assets/img/page.svg" alt="" height="24"/> View demo
+                <Image src={getImagePath('assets/img/page.svg')} alt="" width={24} height={24}/> View demo
             </a>
             <a className="github-card-source-button" href={link} target="_blank" style={{textDecoration: 'none'}}>
-                <img src="assets/img/github-logo.svg" alt="" height="24"/> Source code
+                <Image src={getImagePath('assets/img/github-logo.svg')} alt="" width={24} height={24}/> Source code
             </a>
         </div>
     </div>

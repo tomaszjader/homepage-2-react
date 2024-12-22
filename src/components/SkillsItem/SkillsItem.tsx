@@ -28,6 +28,7 @@ export const SkillsItem: React.FC<SkillsItemProps> = ({ skillsArray, skillsHeade
               alt="" 
               width={2000}
               height={1}
+              style={{ width: "auto", height: "auto" }}
               priority
             />
           </div>

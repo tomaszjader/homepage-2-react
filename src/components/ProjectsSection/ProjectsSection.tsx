@@ -6,11 +6,9 @@ import { Project } from '@/src/interfaces/Project';
 import './ProjectsSection.css';
 import { getGithubProjects } from '@/src/services/GithubAPIService';
 
-interface ProjectsSectionProps {
-  projects: Project[];
-}
 
-export const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
+
+export const ProjectsSection: React.FC = () => {
   const [data, setData] = React.useState<Project[]>([]);
 
   React.useEffect(() => {
@@ -32,8 +30,8 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
         <div className="projects__description">
           <h2 className="projects__header">Recent Projects</h2>
           <p className="projects__description-header">
-            Since diving into development in 2020, I've brought a range of projects
-            to life. Here's a snapshot of my accomplishments so far.
+            Since diving into development in 2020, I&apos;m working on a range of projects
+            to life. Here&apos;s a snapshot of my accomplishments so far.
           </p>
         </div>
         <div className="projects__githubCards">

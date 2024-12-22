@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Homepage 2 react",
-  description: "Homepage 2 react",
+  title: "Homepage 2 react/next.js",
+  description: "Homepage 2 react/next.js",
 };
 
 export default function RootLayout({
