@@ -1,36 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Homepage 2
+Homepage 2 is a modern web application built with **React** and **Next.js**, styled using **SCSS**, and developed with **TypeScript**. The project is based on a professional design created in Figma, ensuring a sleek, user-focused interface and top-notch user experience.
 
-## Getting Started
+## Key Features:
+- **Responsive Design**: Optimized for a variety of devices, providing a seamless experience on desktops, tablets, and mobile phones.
+- **SCSS Styling**: Organized and modular styles for scalable and maintainable design.
+- **React Framework**: Component-based architecture for robust and reusable features.
+- **Next.js Integration**: Server-side rendering (SSR) and static site generation (SSG) for enhanced performance and SEO.
+- **Figma Integration**: Faithfully translated design mockups into functional web pages for a polished result.
+- **TypeScript Development**: Improved code readability, maintainability, and type safety.
 
-First, run the development server:
+## Why "Homepage 2"?
+This project represents a significant upgrade from traditional homepage designs, focusing on modern aesthetics, performance, and usability. Whether it's for personal use, a portfolio, or a starting point for larger projects, Homepage 2 is designed to stand out.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Developer Insights:
+Developing Homepage 2 was an exciting challenge that combined creativity with technical expertise. By leveraging the capabilities of **React** and **Next.js** while staying true to the original Figma design, this project bridges the gap between design and functionality.
