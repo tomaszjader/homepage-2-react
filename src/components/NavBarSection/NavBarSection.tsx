@@ -2,11 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import './NavBarSection.css';
 
-interface NavBarSectionProps {
-  // props here
-}
-
-export const NavBarSection: React.FC<NavBarSectionProps> = () => {
+export const NavBarSection = () => {
   return (
     <nav className="hero hero-gap">
     <div className="nav-bar">

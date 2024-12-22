@@ -31,7 +31,11 @@
 .skills-item__specific-image {
   padding: 40px;
 }
-
+.line {
+  width: 100% !important;
+  height: 1px !important;
+  object-fit: cover !important;
+}
 @media only screen and (max-width: 1320px) {
   .skills-item {
     width: 327px;
