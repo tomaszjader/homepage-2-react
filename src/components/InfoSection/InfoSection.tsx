@@ -9,7 +9,6 @@ export const InfoSection = () => {
     <div className="about">
         <div className="about-text">
             <h1 className="about-header">My name is Tomasz and I’m a <span className="about-header-custom">Junior Fullstack developer</span> and AI fan.</h1>
-
             <p className="about-pargrph">You might be interested in checking the list of my <a href="#skills"
                     className="about-pargrph-custom about-link">skills</a>. Don’t forget to have a
                 glimpse at my <a href="#projects" className="about-pargrph-custom about-link">projects</a>. I’m looking for a new challenges so if
@@ -26,7 +25,6 @@ export const InfoSection = () => {
             </div>
 
         </div>
-
         <Image src={getImagePath('assets/img/47568523.jpg')} alt="" className="about-img" height="400" width="400"/>
     </div>
 </section>

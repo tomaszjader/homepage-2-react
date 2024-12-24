@@ -52,7 +52,7 @@ export const AfterHoursSection: React.FC<AfterHoursSectionProps> = () => {
                 <Image 
                   src={getImagePath("assets/img/games.png")} 
                   alt="" 
-                  width={320} 
+                  width={316} 
                   height={480} 
                 />
                 <h4 className="image-header">Video Games</h4>
@@ -65,7 +65,7 @@ export const AfterHoursSection: React.FC<AfterHoursSectionProps> = () => {
                 <Image 
                   src={getImagePath("assets/img/gim.png")} 
                   alt="" 
-                  width={320} 
+                  width={316} 
                   height={480} 
                 />
                 <h4 className="image-header">Strength Training</h4>

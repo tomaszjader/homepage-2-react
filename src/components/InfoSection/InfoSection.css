@@ -4,7 +4,6 @@
     flex-direction: column;
     align-items: center;
     margin: 0;
-
 }
 
 .about-header {
@@ -102,8 +101,6 @@
     .about-button-know {
         width: 221px;
     }
-
-
 
     .about {
         padding: 0px;

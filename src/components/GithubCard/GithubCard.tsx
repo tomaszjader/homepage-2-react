@@ -48,8 +48,6 @@ export const GithubCard: React.FC<GithubCardProps> = ({ project, stargazersCount
             </a>
         </div>
     </div>
-
-
 </article>
   );
 };

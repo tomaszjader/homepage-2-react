@@ -14,7 +14,6 @@ export default function Home() {
       <SkillsSection />
       <ProjectsSection />
       <AfterHoursSection />
-      
       <FooterSection />
     </div>
   );

@@ -1,5 +1,4 @@
 'use client';
-
 import React from 'react';
 import { GithubCard } from '../GithubCard/GithubCard';
 import { Project } from '@/src/interfaces/Project';

@@ -13,13 +13,9 @@ export const FooterSection: React.FC = () => {
       <p className="footer__pargraph-custom">or find me on</p>
     <div className="footer__buttons">
         <a href="https://github.com/tomaszjader/" className="footer__buttons-social"><Image src={getImagePath('assets/img/github.svg')} alt="" height={24} width={24} /></a>
-        
         <a href="https://www.linkedin.com/in/tomasz-j%C4%85der-a25427200/" className="footer__buttons-social"><Image src={getImagePath('assets/img/linkedin.svg')} alt="" height={24} width={24} /></a>
-        
-        <a href="https://www.instagram.com/leonardo_davidoff/" className="footer__buttons-social"><Image src={getImagePath('assets/img/instagram.svg')} alt="" height={24} width={24} /></a>
-        
-    </div>
-    
+        <a href="https://www.instagram.com/leonardo_davidoff/" className="footer__buttons-social"><Image src={getImagePath('assets/img/instagram.svg')} alt="" height={24} width={24} /></a> 
+    </div> 
 </footer>
   );
 };

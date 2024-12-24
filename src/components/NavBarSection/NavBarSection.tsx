@@ -31,7 +31,6 @@ export const NavBarSection = () => {
             <a href="#contact" className="nav-item-contact">Contact</a>
         </div>
     </div>
-    
 </nav>
   );
 };
