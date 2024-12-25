@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 120px 0;
+    margin: 120px 0;
   }
   
   .projects__githubCards {
