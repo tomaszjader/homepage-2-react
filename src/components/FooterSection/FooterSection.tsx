@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { getImagePath } from '@/src/utils/utils';
-import './FooterSection.css';
 import Link from 'next/link';
 
 
