@@ -1,10 +1,18 @@
-import React from 'react';
+"use client"
+
+import React, { useState } from 'react';
 import Image from 'next/image';
 import './NavBarSection.css';
 import { getImagePath } from '@/src/utils/utils';
 import Link from 'next/link';
 
 export const NavBarSection = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="hero hero-gap">
     <div className="nav-bar">
@@ -15,7 +23,7 @@ export const NavBarSection = () => {
                 <p className="my-title">Junior Fullstack developer</p>
             </div>
         </div>
-        <div className="hero nav-items">
+        <div className={`hero nav-items ${isMenuOpen ? 'nav-items-mobile' : ''}`}>
             <Link href="#about" className="nav-item">About</Link>
     
             <Link href="#skills" className="nav-item">Skills</Link>
@@ -31,6 +39,12 @@ export const NavBarSection = () => {
     
             <Link href="#contact" className="nav-item-contact">Contact</Link>
         </div>
+
+        <button className="hamburger-menu" onClick={toggleMenu}>
+          <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+        </button>
     </div>
 </nav>
   );
