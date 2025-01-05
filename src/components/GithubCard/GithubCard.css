@@ -108,8 +108,8 @@
   }
   
   .github-card-star {
-    height: 23px;
-    width: 29px;
+    height: 31px;
+    width: 45px;
     display: flex;
     padding: 4px 8px;
     align-items: center;
@@ -120,6 +120,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
+    justify-content: center;
   }
   
   .github-card-header-section {
@@ -147,7 +148,7 @@
       flex-direction: column;
     }
     .github-card-star {
-      width: 40px;
+      /* width: 40px; */
     }
     .github-card-source-button {
       font-size: 16px;

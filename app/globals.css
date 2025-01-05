@@ -1,9 +1,17 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #020916;
   margin: 0;
   font-family: DM Sans, Helvetica;
+}
+img, video {
+  max-width: none;
+  height: auto;
 }
