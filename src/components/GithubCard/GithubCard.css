@@ -148,7 +148,7 @@
       flex-direction: column;
     }
     .github-card-star {
-      /* width: 40px; */
+      width: 40px;
     }
     .github-card-source-button {
       font-size: 16px;
