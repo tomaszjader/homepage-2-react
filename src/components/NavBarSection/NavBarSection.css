@@ -1,94 +1,95 @@
 .my-name {
-    color: #CEFF7E;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    margin: 0;
+  color: #CEFF7E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
 }
 
 .my-title {
-    color: #FFF;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    opacity: 0.4;
-    margin: 0;
+  color: #FFF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  opacity: 0.4;
+  margin: 0;
 }
 
 .hero {
-    display: flex;
+  display: flex;
 }
 
 .nav-item {
-    color: #FFF;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
-    text-decoration: none;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
 }
 
 .nav-items {
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-item-contact {
-    display: flex;
-    padding: 14px 32px;
-    align-items: flex-start;
-    border-radius: 12px;
-    background: #CEFF7E;
-    color: #020916;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
-    text-decoration: none;
+  display: flex;
+  padding: 14px 32px;
+  align-items: flex-start;
+  border-radius: 12px;
+  background: #CEFF7E;
+  color: #020916;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
 }
 
 .nav-item-resume {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .hero-section {
-    gap: 16px;
+  gap: 16px;
 }
 
 .hero-gap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px 0;
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0;
+
 }
 
 .my {
-    width: 172px;
-    display: flex;
+  width: 172px;
+  display: flex;
 
-    justify-content: center;
-    flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .nav-bar {
-    display: flex;
-    width: 1320px;
-    justify-content: space-between;
+  display: flex;
+  width: 1320px;
+  justify-content: space-between;
 }
 
-@media only screen and (max-width: 1320px) { 
-    .nav-items {
-        display: none;
-    }
-    .nav-bar {
-        margin-left: 24px;
-    }
+@media only screen and (max-width: 1320px) {
+  .nav-items {
+    display: none;
+  }
+
+  .nav-bar {
+    margin-left: 24px;
+  }
 }
 
 .hamburger-menu {

@@ -1,63 +1,65 @@
 .projects__header {
-    font-size: 20px;
-    color: #9ca3af;
-    margin-left: auto;
-  }
-  
+  font-size: 20px;
+  color: #9ca3af;
+  margin-left: auto;
+}
+
+.projects__description-header {
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  width: 864px;
+  margin-bottom: 80px;
+}
+
+.projects__header {
+  font-size: 20px;
+  color: #9ca3af;
+  margin-left: auto;
+}
+
+.projects__githubCards-concret {
+  display: flex;
+  gap: 16px;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 120px 0;
+}
+
+.projects__githubCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media only screen and (max-width: 1320px) {
+
   .projects__description-header {
-    color: #fff;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    width: 864px;
-    margin-bottom: 80px;
+    width: auto !important;
   }
-  
-  .projects__header {
-    font-size: 20px;
-    color: #9ca3af;
-    margin-left: auto;
+
+  .projects__description {
+    margin: 0 24px;
   }
-  
+}
+
+@media only screen and (max-width: 750px) {
   .projects__githubCards-concret {
-    display: flex;
-    gap: 16px;
-  }
-  
-  .projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    margin: 120px 0;
   }
-  
-  .projects__githubCards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 16px;
+}
+
+@media only screen and (max-width: 374px) {
+  .projects__description-header {
+    width: 272px;
+    font-size: 30px;
   }
-  
-  @media only screen and (max-width: 1320px) {
-   
-    .projects__description-header {
-      width: auto !important;
-    }
-    .projects__description {
-      margin: 0 24px;
-    }
-  }
-  
-  @media only screen and (max-width: 750px) {
-    .projects__githubCards-concret {
-      flex-direction: column;
-    }
-  }
-  @media only screen and (max-width: 374px) {
-    .projects__description-header {
-      width: 272px;
-      font-size: 30px;
-    }
-  }
+}

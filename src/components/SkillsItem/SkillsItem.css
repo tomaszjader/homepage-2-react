@@ -1,4 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/dm-sans");
+
 .skills-item {
   background-color: #1f2937;
   border-radius: 20px;
@@ -6,14 +7,13 @@
   color: white;
   border-radius: 20px;
   border: 1px solid #020916;
-  background: linear-gradient(
-    155deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.04) 100.02%
-  );
+  background: linear-gradient(155deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.04) 100.02%);
   box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.15) inset;
   backdrop-filter: blur(5px);
 }
+
 .skills-item__specific-item {
   font-size: 14px;
 }
@@ -31,23 +31,28 @@
 .skills-item__specific-image {
   padding: 40px;
 }
+
 .line {
   width: 100% !important;
   height: 1px !important;
   object-fit: cover !important;
 }
+
 @media only screen and (max-width: 1320px) {
   .skills-item {
     width: 327px;
   }
+
   .line {
     width: 247px;
   }
 }
+
 @media only screen and (max-width: 374px) {
   .skills-item {
-      width: 272px;
+    width: 272px;
   }
+
   .line {
     width: 192px;
     height: 3px;

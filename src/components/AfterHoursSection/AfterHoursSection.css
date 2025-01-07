@@ -4,7 +4,7 @@
 
 .after-hours__header-container {
     display: flex;
-    
+
     justify-content: center;
     flex-direction: column;
     width: 1320px;
@@ -69,17 +69,19 @@
 }
 
 @media only screen and (max-width: 1320px) {
-  .after-hours__header-container {
-    width: auto;
-  }
+    .after-hours__header-container {
+        width: auto;
+    }
 
     .after-hours__grid {
         flex-direction: column;
         align-items: center;
     }
+
     .after-hours__text {
         width: auto;
     }
+
     .after-hours__content {
         margin: 0 24px;
     }
@@ -95,6 +97,7 @@
     .card {
         width: 272px;
     }
+
     .card__image {
         width: 272px;
     }
