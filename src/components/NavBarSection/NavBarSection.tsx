@@ -34,7 +34,7 @@ export const NavBarSection = () => {
                 <Image src={getImagePath('assets/img/download-button.svg')} alt="" height={20} width={20}/>
     
                 <a 
-                    href={getImagePath('assets/files/TomaszJaderCV.pdf')} 
+                    href={getImagePath('assets/files/Tomasz-Jąder-CV.pdf')} 
                     download 
                     className="nav-item"
                     target="_blank"
