@@ -9,7 +9,7 @@ export const InfoSection = () => {
     <section id="about">
     <div className="about">
         <div className="about-text">
-            <h1 className="about-header">My name is Tomasz and I’m a <span className="about-header-custom">Junior Fullstack developer</span> and AI fan.</h1>
+            <h1 className="about-header">My name is Tomasz and I’m a <span className="about-header-custom">Fullstack developer</span> and AI fan.</h1>
             <p className="about-pargrph">You might be interested in checking the list of my <a href="#skills"
                     className="about-pargrph-custom about-link">skills</a>. Don’t forget to have a
                 glimpse at my <Link href="#projects" className="about-pargrph-custom about-link">projects</Link>. I’m looking for a new challenges so if

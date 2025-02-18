@@ -20,7 +20,7 @@ export const NavBarSection = () => {
             <Image src={getImagePath('assets/img/navbar-logo.svg')} alt="" height={42} width={42}/>
             <div className="my">
                 <p className="my-name">Tomasz Jąder</p>
-                <p className="my-title">Junior Fullstack developer</p>
+                <p className="my-title">Fullstack developer</p>
             </div>
         </div>
         <div className={`hero nav-items ${isMenuOpen ? 'nav-items-mobile' : ''}`}>
@@ -34,7 +34,7 @@ export const NavBarSection = () => {
                 <Image src={getImagePath('assets/img/download-button.svg')} alt="" height={20} width={20}/>
     
                 <a 
-                    href={getImagePath('assets/files/Tomasz-Jąder-CV.pdf')} 
+                    href={getImagePath('assets/files/TomaszJąderCV.pdf')} 
                     download 
                     className="nav-item"
                     target="_blank"
