@@ -13,6 +13,10 @@ export const NavBarSection = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="hero hero-gap">
     <div className="nav-bar">
@@ -24,11 +28,11 @@ export const NavBarSection = () => {
             </div>
         </div>
         <div className={`hero nav-items ${isMenuOpen ? 'nav-items-mobile' : ''}`}>
-            <Link href="#about" className="nav-item">About</Link>
+            <Link href="#about" className="nav-item" onClick={closeMenu}>About</Link>
     
-            <Link href="#skills" className="nav-item">Skills</Link>
+            <Link href="#skills" className="nav-item" onClick={closeMenu}>Skills</Link>
     
-            <Link href="#projects" className="nav-item">Projects</Link>
+            <Link href="#projects" className="nav-item" onClick={closeMenu}>Projects</Link>
     
             <div className="nav-item-resume">
                 <Image src={getImagePath('assets/img/download-button.svg')} alt="" height={20} width={20}/>
@@ -39,13 +43,14 @@ export const NavBarSection = () => {
                     className="nav-item"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={closeMenu}
                 >
                     Resume
                 </a>
     
             </div>
     
-            <Link href="#contact" className="nav-item-contact">Contact</Link>
+            <Link href="#contact" className="nav-item-contact" onClick={closeMenu}>Contact</Link>
         </div>
 
         <button className="hamburger-menu" onClick={toggleMenu}>
