@@ -40,6 +40,7 @@
     border-radius: 16px 200px 16px 16px;
     background: #d2d5da;
     background: lightgray -76.988px -235.752px / 147.391% 202.501% no-repeat;
+    object-fit: cover;
 }
 
 .about-button-contact {

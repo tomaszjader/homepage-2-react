@@ -25,7 +25,7 @@ export const InfoSection = () => {
             </div>
 
         </div>
-        <Image src={getImagePath('assets/img/tomaszjader.png')} alt="" className="about-img" height="400" width="400"/>
+        <Image src={getImagePath('assets/img/tomaszjader.jpg')} alt="" className="about-img" height="400" width="400"/>
     </div>
 </section>
   );
