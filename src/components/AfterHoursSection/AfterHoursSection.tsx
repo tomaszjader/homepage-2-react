@@ -54,15 +54,14 @@ export const AfterHoursSection: React.FC<AfterHoursSectionProps> = () => {
               <div className="card">
                 <Image
                   className="card__image"
-                  src={getImagePath("assets/img/games.png")}
+                  src={getImagePath("assets/img/chess.png")}
                   alt=""
                   width={316}
                   height={480}
                 />
-                <h4 className="card__header">Video Games</h4>
+                <h4 className="card__header">Chess</h4>
                 <p className="card__text">
-                  Lost in virtual realms, I find joy and challenge in the dynamic
-                  world of video games.
+                Lost in strategic battles, I find joy and challenge in the timeless world of chess.
                 </p>
               </div>
               <div className="card">
