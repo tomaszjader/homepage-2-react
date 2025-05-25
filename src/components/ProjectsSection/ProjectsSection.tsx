@@ -2,10 +2,8 @@
 import React from 'react';
 import { GithubCard } from '../GithubCard/GithubCard';
 import { Project } from '@/src/interfaces/Project';
-import './ProjectsSection.css';
+// import './ProjectsSection.css';
 import { getGithubProjects } from '@/src/services/GithubAPIService';
-
-
 
 export const ProjectsSection: React.FC = () => {
   const [data, setData] = React.useState<Project[]>([]);
@@ -39,23 +37,23 @@ export const ProjectsSection: React.FC = () => {
   }
 
   return (
-    <section className="projects" id="projects">
+    <section className="flex flex-col items-center justify-center my-30" id="projects">
       <article>
-        <div className="projects__description">
-          <h2 className="projects__header">Recent Projects</h2>
-          <p className="projects__description-header">
+        <div className="mx-6 md:mx-0">
+          <h2 className="text-gray-400 text-xl ml-auto">Recent Projects</h2>
+          <p className="text-white text-4xl font-medium w-full md:w-[864px] mb-20">
             Since diving into development in 2020, I&apos;m working on a range of projects
             to life. Here&apos;s a snapshot of my accomplishments so far.
           </p>
         </div>
-        <div className="projects__githubCards">
-          <div className="projects__githubCards-concret">
+        <div className="flex flex-col items-center justify-center gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             {data.slice(0, 2).map(renderGithubCard)}
           </div>
-          <div className="projects__githubCards-concret">
+          <div className="flex flex-col md:flex-row gap-4">
             {data.slice(2, 4).map(renderGithubCard)}
           </div>
-          <div className="projects__githubCards-concret">
+          <div className="flex flex-col md:flex-row gap-4">
             {data.slice(4, 6).map(renderGithubCard)}
           </div>
         </div>
